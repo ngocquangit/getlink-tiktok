@@ -1,0 +1,25 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Bootstrap CSS
+  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh', crossorigin='anonymous')
+  title Hello, world!
+.container-fluid
+  .row
+    .col-sm-4.bg-white
+      form(action="/download/s" method="POST")
+        .input-group.mb-3
+          input.form-control(name="link",type='text', placeholder='Nhập vào link cần tải', aria-describedby='button-addon2')
+          .input-group-append
+            button#button-addon2.btn.btn-outline-secondary Get Link
+    .col-sm-8.bg-light
+      .embed-responsive.embed-responsive-16by9
+        video#playvideo(autoplay,controls)
+          source(src='http://v19.tiktokcdn.com/40d01e78c4e48bb5c05d7776ff4aab02/5e7d3d10/video/tos/alisg/tos-alisg-pve-0037/e86dba3427eb403c9aa27230f6559a40/?a=1180&br=1066&bt=533&cr=0&cs=0&dr=0&ds=6&er=&l=202003261738410101152280700673C1FB&lr=&qs=0&rc=M3Y3OXZvcm00czMzMzgzM0ApZTw7aTVoaWU3Nzk6Ojc6aGcvb2ZgMTM1a3FfLS00LzRzczAuYS0tYDFhX140Ly0uMS46Yw%3D%3D&vl=&vr=', type='video/mp4')
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6', crossorigin='anonymous')
